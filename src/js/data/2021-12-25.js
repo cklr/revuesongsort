@@ -4,13 +4,13 @@ dataSet[dataSetVersion] = {};
 dataSet[dataSetVersion].options = [
   {
     name: "Filter by Album/Singles",
-    key: "series",
+    key: "albums",
     tooltip: "Check this to restrict to certain albums/singles.",
     checked: false,
     sub: [
       { name: "Singles", key: "single" },
-      { name: "The Highly Responsive to Prayers", tooltip: "01 - Reiiden", key: "HRtP" },
-      { name: "The Story of Eastern Wonderland", tooltip: "02 - Fuumaroku", key: "SoEW" },
+      { name: "Anime Insert 1", tooltip: "Not the song (lol)", key: "LRdM" },
+      { name: "Amime Insert 2", tooltip: "02 - Fuumaroku", key: "LRdS" },
       { name: "Phantasmagoria of Dim.Dream", tooltip: "03 - Yumejikuu", key: "PoDD" },
       { name: "Lotus Land Story", tooltip: "04 - Gensoukyou", key: "LLS" },
       { name: "Mystic Square", tooltip: "05 - Kaikidan", key: "MS" },
@@ -35,19 +35,23 @@ dataSet[dataSetVersion].options = [
       { name: "Legacy of Lunatic Kingdom", tooltip: "15 - Kanjuden", key: "LoLK" },
       { name: "Antinomy of Common Flowers", tooltip: "15.5 - Hyouibana", key: "AoCF" },
       { name: "Hidden Star in Four Seasons", tooltip: "16 - Tenkuushou", key: "HSiFS" },
-      { name: "Violet Detector", tooltip: "16.5 - Hifuu Nightmare Diary", key: "VD" },
-      { name: "Wily Beast and Weakest Creature", tooltip: "17 - Kikeijuu", key: "WBaWC" },
-      { name: "Unconnected Marketeers", tooltip: "18 - Kouryuudou", key: "UM" },
     ]
   },
   {
     name: "Filter by Character",
-    key: "stage",
+    key: "character",
     tooltip: "Check this to restrict to characters that appear in songs.",
     checked: false,
-    sub: [ { name: "Stage 1", key: "st1" }, { name: "Stage 2", key: "st2" }, { name: "Stage 3", key: "st3" }, { name: "Stage 4", key: "st4" }, { name: "Stage 5/Penultimate", tooltip: "Stage 4 in 5-stage games, and Stage 8 in 9-stage games.", key: "st5" }, { name: "Stage 6/Final", key: "st6" }, { name: "Stage EX/Phantasm", key: "ex" }
+    sub: [ { name: "Fuck You", key: "Karen" }, { name: "Stage 2", key: "st2" }, { name: "Stage 3", key: "st3" }, { name: "Stage 4", key: "st4" }, { name: "Stage 5/Penultimate", tooltip: "Stage 4 in 5-stage games, and Stage 8 in 9-stage games.", key: "st5" }, { name: "Stage 6/Final", key: "st6" }, { name: "Stage EX/Phantasm", key: "ex" }
     ]
   },
+  {
+    name: "Filter by Medium",
+    key: "medium",
+    tooltip: "There's too many songs. Help me.",
+    checked: false,
+    sub:[ { name: "Anime", key: "anime" }, {name: "Stage Plays", key: "stagep" }]
+  }
 ];
 
 dataSet[dataSetVersion].characterData = [
@@ -55,8 +59,9 @@ dataSet[dataSetVersion].characterData = [
     name: "You are a ghost, I am a ghost ～劇場のゴースト～",
     img: "Dw8rVEW.png",
     opts: {
-      series: [ "single", "EoSD", "PCB", "IaMP", "IN", "PoFV", "StB", "SWR", "MoF", "SA", "UFO", "soku", "DS", "TD", "HM", "DDC", "ISC", "ULiL", "LoLK", "AoCF", "HSiFS", "VD", "WBaWC", "UM" ],
-      stage: ["st4"]
+      albums: [ "single"],
+      character: ["st4"],
+      medium: ["anime"]
     }
   },
 
@@ -64,8 +69,8 @@ dataSet[dataSetVersion].characterData = [
     name: "恋は太陽 ～CIRCUS!～",
     img: "i2UXQCl.png",
     opts: {
-      series: [ "single", "EoSD", "PCB", "IaMP", "IN", "PoFV", "StB", "SWR", "MoF", "SA", "UFO", "soku", "DS", "TD", "HM", "DDC", "ISC", "ULiL", "LoLK", "AoCF", "HSiFS", "VD", "WBaWC", "UM" ],
-      stage: ["st4"]
+      albums: [ "single", "PCB", "IaMP", "IN", "PoFV", "StB", "SWR", "MoF", "SA", "UFO", "soku", "DS", "TD", "HM", "DDC", "ISC", "ULiL", "LoLK", "AoCF", "HSiFS", "VD", "WBaWC", "UM" ],
+      character: ["st4"]
     }
   },
 
@@ -73,8 +78,8 @@ dataSet[dataSetVersion].characterData = [
     name: "スタァライトシアター",
     img: "AVjcDEL.png",
     opts: {
-      series: [ "EoSD", "PCB", "IaMP", "IN", "PoFV", "StB", "SWR", "MoF", "SA", "UFO", "soku", "DS", "TD", "HM", "DDC", "ISC", "ULiL", "LoLK", "AoCF", "HSiFS", "VD", "WBaWC", "UM" ],
-      stage: ["st3"]
+      albums: [ "EoSD", "PCB", "IaMP", "IN", "PoFV", "StB", "SWR", "MoF", "SA", "UFO", "soku", "DS", "TD", "HM", "DDC", "ISC", "ULiL", "LoLK", "AoCF", "HSiFS", "VD", "WBaWC", "UM" ],
+      character: ["st3"]
     }
   },
 
